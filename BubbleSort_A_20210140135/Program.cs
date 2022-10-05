@@ -14,7 +14,7 @@ namespace BubbleSort_A_20210140135
         //Deklarasi variabel int untuk menyimpan banyaknya data pada array
         private int[] n;
 
-        //Fungsi/MEthod untuk menerima masukan
+        //Fungsi/Method untuk menerima masukan
         public void read()
         {
             //Menerima angka untuk menentukan banyaknya data yang disimpan pada array
@@ -41,6 +41,20 @@ namespace BubbleSort_A_20210140135
                 string s1 = Console.ReadLine();
                 a[i] = Int32.Parse(s1);
             }
+        }
+
+        public void display()
+        {
+            //Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine(" Element array yang telah tersusun ");
+            Console.WriteLine("------------------------------------");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(a[j]);
+            }
+            Console.WriteLine("");
         }
         static void Main(string[] args)
         {
